@@ -1,9 +1,13 @@
+<<<<<<< Updated upstream
 import hashlib
 
+=======
+>>>>>>> Stashed changes
 def readInput():
     f = open("input", "r")
     return f.readline()
 
+<<<<<<< Updated upstream
 def sockStuffer(input: str):
 
   hashResult = ''
@@ -20,3 +24,9 @@ if __name__ == "__main__":
   input = readInput()
   result = sockStuffer(input)
   print(result)
+=======
+
+
+if __name__ == "__main__":
+    input = readInput()
+>>>>>>> Stashed changes

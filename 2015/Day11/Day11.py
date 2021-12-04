@@ -2,6 +2,7 @@ def readInput():
     f = open("input", "r")
     return f.readline()
 
+<<<<<<< Updated upstream
 def getNextPassword(input: str):
   result = input
   while not isPasswordValid(result):
@@ -91,3 +92,13 @@ if __name__ == "__main__":
   # input = incrementIOL(input)
   result = getNextPassword(input)
   print(result)
+=======
+def iteratePassword(input):
+    result = ''
+    
+    return result
+
+if __name__ == "__main__":
+    input = readInput()
+    print(iteratePassword(input))
+>>>>>>> Stashed changes

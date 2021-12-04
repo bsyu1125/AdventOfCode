@@ -1,10 +1,16 @@
+<<<<<<< Updated upstream
 badStrings = ['ab', 'cd', 'pq', 'xy']
 vowels = ['a', 'e', 'i', 'o', 'u']
+=======
+badStrings = ["ab", "cd", "pq", "xy"]
+vowels = ["a", "e", "i", "o", "u"]
+>>>>>>> Stashed changes
 
 def readAllInput():
     f = open("input", "r")
     return f.read().splitlines()
 
+<<<<<<< Updated upstream
 def isNiceStringPart1(input: str):
   haveBadStrings = False
   vowelCount = 0
@@ -69,3 +75,28 @@ if __name__ == "__main__":
 
   print(result)
 
+=======
+def countNiceStrings(allInputs):
+
+    result = 0
+
+    for input in allInputs:
+
+        for badSubstrings in badStrings:
+            if badSubstrings in input:
+                break
+
+        vowelCount = 0
+        for vowel in vowels:
+            if vowel in input:
+                vowelCount = vowelCount + 1
+
+        if vowelCount >= 3:
+            result = result + 1
+
+def isStringNice(input):
+    
+
+if __name__ == "__main__":
+    allInputs = readAllInput()
+>>>>>>> Stashed changes
